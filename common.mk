@@ -87,7 +87,7 @@ PRODUCT_PACKAGES += \
 
 # SamsungPowerHAL
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-service.exynos4
+    android.hardware.power@1.0-service.exynos4412
 
 # Battery
 PRODUCT_PROPERTY_OVERRIDES += \
