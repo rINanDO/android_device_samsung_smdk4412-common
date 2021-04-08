@@ -290,8 +290,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-threads=1 \
     dalvik.vm.image-dex2oat-threads=1
 
-# Build with specific settings for Galaxys2-common
-$(call inherit-product, $(LOCAL_PATH)/go_galaxys2-common.mk)
+# Use GO
+$(call inherit-product, $(SRC_TARGET_DIR)/product/go_defaults.mk)
 
 # Apply Dalvik config for 1G phone
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
