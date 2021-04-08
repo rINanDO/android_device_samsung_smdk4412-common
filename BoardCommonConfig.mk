@@ -77,8 +77,15 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /system/vendor/lib/hw/gps.exynos4.vendor.so=22 \
     /system/vendor/bin/glgps=22
 
-WITH_DEXPREOPT := true
-WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+# Dexpreopt
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    WITH_DEXPREOPT_DEBUG_INFO := false
+    USE_DEX2OAT_DEBUG := false
+    DONT_DEXPREOPT_PREBUILTS := true
+    WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+  endif
+endif
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := device/samsung/smdk4412-common/config.fs
