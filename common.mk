@@ -121,6 +121,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service \
     android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service \
     libbt-vendor \
     com.android.future.usb.accessory \
     hwcomposer.exynos4 \

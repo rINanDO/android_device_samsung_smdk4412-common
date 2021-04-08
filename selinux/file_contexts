@@ -46,6 +46,9 @@
 # Sensors
 /dev/akm8975                                                     u:object_r:sensors_device:s0
 
+# Vibrator
+/sys/devices/virtual/timed_output/vibrator/enable(/.*)?		u:object_r:sysfs_vibrator:s0
+
 # WiFi
 /dev/rfkill                                                      u:object_r:rfkill_device:s0
 /efs/wifi/.mac.info                                              u:object_r:wifi_data_file:s0
