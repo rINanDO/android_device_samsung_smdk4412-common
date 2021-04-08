@@ -102,6 +102,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.small_battery=true
 
+# Charger
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.charger.enable_suspend=true
+
 # Packages
 PRODUCT_PACKAGES += \
     AdvancedDisplay \
