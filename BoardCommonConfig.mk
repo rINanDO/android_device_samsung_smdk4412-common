@@ -209,5 +209,8 @@ SELINUX_IGNORE_NEVERALLOWS := true
 # LPM Battery Percentage
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 
+# Memfd
+TARGET_HAS_MEMFD_BACKPORT := true
+
 # inherit from the proprietary version
 -include vendor/samsung/smdk4412-common/BoardConfigVendor.mk
