@@ -118,6 +118,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     android.hardware.keymaster@3.0-impl \
     android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service \
     android.hardware.vibrator@1.0-impl \
     libbt-vendor \
     com.android.future.usb.accessory \
