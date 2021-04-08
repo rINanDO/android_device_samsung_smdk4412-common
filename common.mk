@@ -86,6 +86,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service.exynos4
 
 # Battery
+PRODUCT_PACKAGES += \
+     android.hardware.health@2.1-service \
+     android.hardware.health@2.1-impl
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.small_battery=true
 
