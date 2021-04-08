@@ -136,3 +136,6 @@
 
 /sys/devices/virtual/sec/sec_touchkey(/.*)?                   u:object_r:sysfs_sec_touchkey:s0
 /sys/devices/virtual/sec/led(/.*)?                            u:object_r:sysfs_sec_led:s0
+
+# Gatekeeper
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software       u:object_r:hal_gatekeeper_default_exec:s0

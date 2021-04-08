@@ -86,6 +86,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service.software
+
 # SamsungPowerHAL
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service.exynos4
