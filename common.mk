@@ -92,7 +92,7 @@ PRODUCT_PACKAGES += \
 
 # SamsungPowerHAL
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-service.exynos4
+    android.hardware.power@1.0-service.exynos4210
 
 # Battery
 PRODUCT_PACKAGES += \
