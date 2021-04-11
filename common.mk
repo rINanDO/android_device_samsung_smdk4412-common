@@ -46,6 +46,14 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
+#Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl-legacy \
+    android.hardware.camera.provider@2.4-service \
+    camera.device@1.0-impl-legacy \
+    libstagefright-shim \
+    mediaserver.rc
+
 # Camera FW
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/80cfw:system/etc/init.d/80cfw
@@ -136,9 +144,6 @@ PRODUCT_PACKAGES += \
     libMali \
     libEGL_mali \
     gCam \
-    android.hardware.camera.provider@2.4-impl-legacy \
-    android.hardware.camera.provider@2.4-service \
-    camera.device@1.0-impl-legacy \
     android.hardware.sensors@1.0-impl \
     android.hardware.gnss@1.0-impl \
     android.hardware.gnss@1.0-service.exynos4 \
@@ -152,16 +157,12 @@ PRODUCT_PACKAGES += \
     libUMP \
     macloader \
     tinymix \
-    libstagefright-shim \
     libsuspend-shim \
     libC
 
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcutils-v29.so
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/mediaserver.rc:system/etc/init/mediaserver.rc
 
 # MFC API
 PRODUCT_PACKAGES += \
