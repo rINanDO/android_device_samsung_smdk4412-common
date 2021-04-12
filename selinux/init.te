@@ -5,7 +5,7 @@ allow init debugfs:dir mounton;
 allow init sysfs_bluetooth_writable:file setattr;
 allow init sysfs_display:file { open setattr read write };
 allow init sysfs_radio:file setattr;
-allow init proc:file { open write };
+allow init proc:file { setattr open write };
 allow init sysfs:file { open read setattr write };
 allow init sysfs_batteryinfo:file setattr;
 allow init su_exec:file { execute getattr open read };
@@ -36,5 +36,9 @@ allow init sysfs_sec_touchkey:file setattr;
 allow init sysfs_sec_led:file setattr;
 allow init { domain -lmkd -crash_dump }:process noatsecure;
 allow init sysfs_wake_lock:file { open write };
+allow init self:netlink_generic_socket { bind create getattr read setopt write };
+allow init system_file:file execute_no_trans;
+allow init system_server:binder { call transfer };
+
 
 domain_auto_trans(init, rootfs, cpboot-daemon, macloader, tinyplay)
