@@ -25,3 +25,4 @@ allow cpboot-daemon sysfs:file { open read write };
 allow cpboot-daemon device:chr_file { create unlink };
 allow cpboot-daemon self:capability { dac_override };
 allow cpboot-daemon block_device:dir search;
+allow cpboot-daemon proc_cmdline:file { open read };
