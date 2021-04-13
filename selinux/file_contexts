@@ -56,7 +56,7 @@
 /data/.wifiver.info                                              u:object_r:wifi_data_file:s0
 /data/.psm.info                                                  u:object_r:wifi_data_file:s0
 /sys/module/dhd/parameters/firmware_path                         u:object_r:wifi_firmware_path:s0
-
+/(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-lazy\.legacy       u:object_r:hal_wifi_default_exec:s0
 
 # Firmwares
 /system/vendor/firmware/mfc_fw.bin                               u:object_r:firmware_mfc:s0
