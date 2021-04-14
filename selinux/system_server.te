@@ -29,3 +29,4 @@ allow system_server radioreset:fifo_file write;
 allow system_server init:binder transfer;
 allow system_server userspace_reboot_config_prop:file { getattr open read };
 allow system_server userspace_reboot_exported_prop:file { getattr open read };
+allow system_server exported_camera_prop:file { getattr open read };
