@@ -1,3 +1,5 @@
+allow mediaserver hal_camera_default:binder { call transfer };
 allow mediaserver system_file:file execmod;
 allow mediaserver mfc_device:chr_file rw_file_perms;
 allow mediaserver ion_device:chr_file write;
+allow mediaserver exported_camera_prop:file { getattr open read };
