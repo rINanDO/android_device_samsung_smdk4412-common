@@ -49,7 +49,7 @@ PRODUCT_COPY_FILES += \
 #Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-legacy \
-    android.hardware.camera.provider@2.4-service \
+    android.hardware.camera.provider@2.4-service-lazy \
     camera.device@1.0-impl-legacy \
     libstagefright-shim \
     mediaserver.rc
@@ -184,12 +184,13 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service
+    android.hardware.drm@1.0-service-lazy
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.ccodec=0 \
     media.stagefright.legacyencoder=true \
-    media.stagefright.less-secure=true
+    media.stagefright.less-secure=true \
+    ro.camera.enableLazyHal=true
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
