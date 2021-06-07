@@ -548,7 +548,11 @@ service sec_keyboard /system/bin/sec_keyboard /dev/ttySAC2
 	disabled
 	group system
 
+on early-init
+    write /proc/sys/kernel/magisk_workaround 1
+
 on property:sys.boot_completed=1
+        write /proc/sys/kernel/magisk_workaround 1
         write /sys/devices/system/cpu/cpufreq/dynamic/min_cpu_lock 2
         write /sys/devices/system/cpu/cpufreq/pegasusq/min_cpu_lock 2
 
