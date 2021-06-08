@@ -167,7 +167,6 @@ PRODUCT_PACKAGES += \
     libUMP \
     macloader \
     tinymix \
-    libsuspend-shim \
     libC
 
 # VNDK
