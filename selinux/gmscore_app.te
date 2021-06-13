@@ -1,2 +1,8 @@
 allow gmscore_app exported_camera_prop:file { getattr open read };
-
+allow gmscore_app adbd_prop:file { getattr open };
+allow gmscore_app apexd_prop:file { getattr open };
+allow gmscore_app apk_verity_prop:file { getattr open };
+allow gmscore_app bluetooth_a2dp_offload_prop:file { getattr open };
+allow gmscore_app bluetooth_audio_hal_prop:file open;
+allow gmscore_app zygote:dir search;
+allow gmscore_app zygote:file { open read };
