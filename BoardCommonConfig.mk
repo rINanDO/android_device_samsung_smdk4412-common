@@ -195,6 +195,7 @@ endif
 
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/smdk4412-common/selinux
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/samsung/smdk4412-common/selinux/private
 
 # Charging mode
 BOARD_BATTERY_DEVICE_NAME := "battery"
