@@ -1,1 +1,1 @@
-allow priv_app ion_device:chr_file write;
+#allow priv_app ion_device:chr_file write;
