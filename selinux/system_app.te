@@ -5,7 +5,6 @@ allow system_app method_trace_data_file:file { read unlink };
 #allow system_app proc_pagetypeinfo:file read;
 allow system_app sysfs_zram:dir search;
 allow system_app wificond:binder call;
-#allow system_app ion_device:chr_file write;
 allow system_app apexd:binder call;
 allow system_app display_vendor_data_file:dir search;
 allow system_app display_vendor_data_file:file { getattr open write };

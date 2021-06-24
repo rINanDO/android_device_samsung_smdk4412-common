@@ -7,7 +7,6 @@ allow system_server uhid_device:chr_file { read write ioctl open };
 allow system_server radio_data:dir search;
 allow system_server sysfs_display:dir search;
 allow system_server sysfs_display:file { getattr open read write };
-allow system_server ion_device:chr_file write;
 allow system_server rild:unix_stream_socket connectto;
 allow system_server sensors_device:chr_file { ioctl open read write };
 allow system_server device:chr_file { ioctl open read write };
