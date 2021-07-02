@@ -552,7 +552,7 @@ on early-init
     write /proc/sys/kernel/magisk_workaround 1
 
 on property:sys.boot_completed=1
-        write /proc/sys/kernel/magisk_workaround 1
+        write /proc/sys/kernel/magisk_workaround 0
 
 on property:ro.uart_debug=0
 	start sec_keyboard
